@@ -19,7 +19,7 @@ app.use('/api/notes', require('./routes/notes'))
 app.get('/', (req, res) => {
     res.send('Hey everyone!')
 })
-app.listen(process.env.PORT || port, (err) => {
+app.listen(process.env.PORT || 3000, (err) => {
     if (err) {
         console.log("error occured");
     } else {
