@@ -19,6 +19,10 @@ app.use('/api/notes', require('./routes/notes'))
 app.get('/', (req, res) => {
     res.send('Hey everyone!')
 })
-app.listen(5000, () => {
-    console.log('Listening on port 5000')
-})
+app.listen(process.env.PORT || port, (err) => {
+    if (err) {
+        console.log("error occured");
+    } else {
+        console.log(` server is running on port ${port}`);
+    }
+});
