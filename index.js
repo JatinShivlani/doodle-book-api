@@ -23,6 +23,6 @@ app.listen(process.env.PORT || 3000, (err) => {
     if (err) {
         console.log("error occured");
     } else {
-        console.log(` server is running on port ${port}`);
+        console.log(` server is running on port ${3000}`);
     }
 });
